@@ -20,7 +20,9 @@ class ViewController: UIViewController {
         let secondFrame = CGRect(x: 20, y: 30, width: 50, height: 50)
         let secondView = UIView(frame: secondFrame)
         secondView.backgroundColor = UIColor.green
-        view.addSubview(secondView)
+//        play with view hierarchy so that one instance of UIView is a subview of the other UIView instead of the view controller's view
+//        secondView as a subview of firstView
+        firstView.addSubview(secondView)
     }
 }
 
